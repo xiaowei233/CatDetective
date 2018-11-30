@@ -1,0 +1,3 @@
+Just a normal television.
+It's airing a popular rock music program right now.
+\0

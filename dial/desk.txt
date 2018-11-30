@@ -1,0 +1,21 @@
+A simple but nice desk for working and reading.
+\0
+"desktop"
+There many files on the desktop,
+but none of them seem to be of what a cat can understand.
+\0
+"drawers"
+All drawers are locked.
+\0
+"diary"
+The diary White writes.
+(Why would a cat write a diary)
+\0
+"opendiary"
+15th, Today's Black's birthday!
+And it turns out to be Gray's birthday too!
+What a coincidence!
+\0
+17th, Gray said he found a very special cat in landfill looking for something,
+so he won't come to play for a short time.
+\0

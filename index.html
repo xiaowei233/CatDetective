@@ -1,0 +1,85 @@
+<!--
+    Xiaowei Chen
+    xic220
+    CSE264 Spring 2018
+    Final Project: A mini cat detective game
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+
+<!--
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script> 
+    <script src="js/virtualjoystick.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.6.0/dist/phaser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/planck-js@0.1.44/dist/planck.min.js"></script>
+-->
+    <script src="js/Box2d.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/dialogue.js"></script>
+    <script src="js/sceneData.js"></script>
+    <title>Ghost Cat</title>
+</head>
+<body>
+    <div id="container">
+        
+        <canvas id="gamecanvas" width="800" height="450" class="gameset"></canvas>
+
+        <div id="pad" class="gameset">
+            <div><img id="leftC" src="img/leftC.png"></div>
+            <div><img id="rightC" src="img/rightC.png"></div>
+            <div><img id="ctrl" src="img/ctrl.png"></div>
+            <div><img id="jump" src="img/jump.png"></div>
+        </div>
+
+        <div id="startingscreen" class="gameset">
+            <img id="startbtn" src="img/startbtn.png" onclick="game.transition()">
+        </div>
+
+        <div id="loadingscreen" class="gameset">
+            <div id="loadingmessage"></div>
+        </div>
+    
+        <div id="dialogues" class="gameset">
+            <p id="dialcontent"></p>
+        </div>
+        <div id="npcs" class="gameset">
+            <img id="white" src="img/white.png" class="npc">
+            <img id="black" src="img/black.png" class="npc">
+            <img id="gray" src="img/gray.png" class="npc">
+            <img id="orange" src="img/orange.png" class="npc">
+        </div>
+        <div id="selection" class="gameset">
+            
+        </div>
+
+        <div id="transitionscreen" class="gameset w3-animate-fading	">
+            <p>
+                You are a cat detective trainee and today you received a call from your friend, White. Her favorite knit ball is stolen and the other cats on the scene 
+                are Gray, Black, and Orange. Find out who stole it!
+            </p>
+        </div>
+
+        <div id="endingscreen" class="gameset"></div>
+    </div>
+
+    <div id="imgcollector" hidden>
+        <img src="img/background.png" id="gamebackground">
+        <img src="img/player.png" id="mainchar">
+    </div>
+
+    <canvas id="debugcanvas" width="4000" height="570" style="border:1px solid black;"></canvas>
+
+</body>
+</html>
